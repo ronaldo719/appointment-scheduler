@@ -1,0 +1,99 @@
+ .teamContent {
+   position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    text-align: left;
+ }
+ 
+ .staffTitle {
+    text-transform: none;
+}
+
+.gridItem b{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+  /* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1025px) { 
+
+ .teamContent {
+    width: 100%;
+    line-height: 26px;
+}
+
+.staffGrid { 
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-column-gap: calc(5%);
+}
+.gridItem { 
+    width: calc(100%);
+} 
+
+ .staffPicture {
+    width: 100%;
+}
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+
+    .gridItem {
+        width: 100%;
+        margin-bottom: calc(20%);
+    }
+
+    .staffPicture {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 700px) {
+
+  .pageTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    top: 40%;
+  }
+
+      .gridItem {
+        width: 100%;
+        margin-bottom: calc(20%);
+    }
+
+    .staffPicture {
+        width: 100%;
+    }
+
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 700px) and (max-device-width : 1024px) {
+
+.teamContent {
+    width: 100%;
+    line-height: 26px;
+}
+
+.staffGrid { 
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-column-gap: calc(5%);
+    /* padding: 100px; */
+}
+.gridItem { 
+    width: calc(100%);
+} 
+
+ .staffPicture {
+    width: 100%;
+}
+}

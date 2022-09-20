@@ -1,0 +1,192 @@
+
+.contactTitle {
+    margin-top: calc(20%);
+    font-size: 3rem;
+}
+
+.contactContent {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    margin-top: calc(10%);
+    text-align: left;
+}
+
+.leftSideContent {
+      /* position: relative; */
+    width: 100%;
+}
+
+
+.contactInnerLine {
+    width: 100%;
+}
+
+.locationHours {
+    position: relative;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    /* height: 550px; */
+    color: black;
+    background: none; 
+}
+
+.locationTitles {
+    font-size: 2rem;
+    /* height: auto; */
+}
+
+.locationHours ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* height: 100%; */
+}
+
+.locationHours li {
+    color: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    padding: .25rem;
+}
+
+.rightSideContact {
+    width: 100%;
+    height: auto;
+}
+
+.contactForm {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.formSent {
+    margin-bottom: calc(10%);
+}
+
+.contactInput{
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin: 15px 0px;
+    /* align-items: center; */
+    background-color: #eee;
+     /* cursor: pointer; */
+    font-size: 0.9em;
+    /* text-align: center; */
+    font-weight: 400;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    font-style: normal; 
+}
+
+.messageContact {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 15px 0px;
+    background-color: #eee;
+    /* border-radius: 5px; */
+    font-family: inherit; 
+    font-style: normal; 
+    font-size: 0.9em;
+}
+
+
+.contactSubmit {
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    margin: 0;
+    padding: 14px, 35px;
+    background-color: transparent;
+    color: #272727;
+    border: 2px solid rgb(39, 39, 39);
+    transition: 0.3s background-color linear, 0.1s color linear;
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+
+.contactSubmit:hover {
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+
+  /* big landscape tablets, laptops, and desktops */ 
+@media (min-width:701px) { 
+
+
+
+.leftSideContent {
+    position: relative;
+    display: block;
+    width: 40%;
+    padding: 17px;
+}
+
+.contactInnerLine {
+    margin: 50px 0;
+}
+
+
+.locationTitles {
+    font-size: 2rem;
+    height: 40px;
+}
+
+.rightSideContact {
+    padding: 17px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+}
+
+.contactForm {
+    /* padding: 17px; */
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.formSent {
+    margin-bottom: 50px;
+}
+
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 300px) and (max-device-width : 700px) {
+
+ .locationTitles {
+     font-size: 1.5rem;
+ }
+
+ .leftSideContent {
+     margin-bottom: 10%;
+ }
+
+.contactForm {
+    margin-bottom: calc(10%);
+}
+
+
+
+
+}

@@ -1,0 +1,15 @@
+{
+    "information": "Enter appointment information below.",
+    "name": "Name",
+    "staff": "Staff",
+    "phone": "Phone",
+    "service": "Service",
+    "time": "Time",
+    "date": "Date",
+    "search": "Search",
+    "cancelMessage": "Appointment found. Would you like to cancel this appointment?",
+    "cancelAppointment": "Appointment cancelled",
+    "appointmentCanceled": "Your appointment has been cancelled!",
+    "returnhome": "Return home",
+    "noAppointment": "No appointment found!"
+}

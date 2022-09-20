@@ -1,0 +1,15 @@
+{
+    "information": "Ingrese la información de la cita abajo.",
+    "name": "Nombre",
+    "staff": "Personal",
+    "phone": "Teléfono",
+    "service": "Servicio",
+    "time": "Tiempo",
+    "date": "Fecha",
+    "search": "Buscar",
+    "cancelMessage": "Cita encontrada. ¿Desea cancelar esta cita?",
+    "cancelAppointment": "Cancelar Cita",
+    "appointmentCanceled": "Su cita ha sido cancelada!",
+    "returnhome": "Volver a Casa",
+    "noAppointment": "No se encontró ninguna cita!"
+}
