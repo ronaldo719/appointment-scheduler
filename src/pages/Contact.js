@@ -2,7 +2,9 @@ import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
 import Navbar from "../Navbar";
 import { useTranslation } from 'react-i18next';
-
+const serviceID = process.env.REACT_APP_SERVICE_ID;
+const templateID = process.env.REACT_APP_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
 
 export default function Contact() {
@@ -15,10 +17,10 @@ export default function Contact() {
 
         emailjs
             .sendForm(
-                "service_qsq191k",
-                "template_7fl7pmt",
+                `${serviceID}`,
+                `${templateID}`,
                 form.current,
-                "M6aDrreNhUhQZowdl"
+                `${publicKey}`
             )
             .then(
                 (result) => {
