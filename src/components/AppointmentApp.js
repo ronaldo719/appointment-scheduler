@@ -6,12 +6,10 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { withTranslation } from 'react-i18next';
 import moment from 'moment';
-// require('dotenv').config();
-import Navbar from "../Navbar";
 
-// const API_BASE = process.env.REACT_APP_BASE_URL;
-const API_BASE = `https://marysappointments-api.herokuapp.com/api/`;
-// console.log(API_BASE);
+
+const API_BASE = process.env.REACT_APP_BASE_URL;
+// const API_BASE = `https://marysappointments-api.herokuapp.com/api/`;
 
 class AppointmentApp extends Component {
 
@@ -60,7 +58,7 @@ class AppointmentApp extends Component {
         };
     }
     componentDidMount() {
-        console.log('here');
+
 
         axios.get(`${API_BASE}olgaappointments`).then(response => {
             console.log("response via olga db: ", response.data);
@@ -77,7 +75,7 @@ class AppointmentApp extends Component {
         console.log(appointments);
         const initialIntervalTimesForOlga = new Map();
         const initialIntervalTimesForMary = new Map();
-        console.log(currStaffDatabase);
+
         if (currStaffDatabase === "Olga") {
             this.popullateStaffAppointments(appointments, initialIntervalTimesForOlga);
             this.setState({ intervalTimesForOlga: initialIntervalTimesForOlga });
@@ -137,10 +135,6 @@ class AppointmentApp extends Component {
     handleSearch = async (event) => {
         event.preventDefault();
         this.setState({ currAppointmentStep: 2, displayDate: moment(this.state.appointmentDate).format('l') });
-
-        // const todaysDate = new Date();
-        // console.log(moment(this.state.appointmentDate).subtract(1, 'days').format('l') === moment(todaysDate).format('l'));
-        // console.log(moment(this.state.appointmentDate).format('l'));
 
         let intervalTimes = [1030, 1045, 1100, 1115, 1130, 1145, 1200, 1215, 1230, 1245, 1300, 1315, 1330, 1345, 1400, 1415, 1430, 1445, 1500, 1515, 1530, 1545, 1600, 1615, 1630, 1645, 1700, 1715, 1730, 1745, 1800, 1815, 1830, 1845, 1900];
 
