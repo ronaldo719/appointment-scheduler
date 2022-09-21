@@ -106,9 +106,6 @@ class AppointmentApp extends Component {
     }
 
 
-
-
-
     updateIntervalTimes(currIntervalTimes, category, startTime) {
         for (let i = 0; i < currIntervalTimes.length; i++) {
             if (category == 'color' && currIntervalTimes[i] == startTime) {
