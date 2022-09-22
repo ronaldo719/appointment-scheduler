@@ -60,11 +60,6 @@ img{
     gap: 2rem;
 }
 
-.site-title{
-    /* font-size: 2rem;
-    font-weight: 540;
-    font-family: cursive; */
-}
 
 .nav a {
     color: inherit;
@@ -144,9 +139,6 @@ nav {
     font-size: 1.4rem;
 }
 
-.nav ul {
-    gap: 2rem;
-}
 
 .bookAppointment {
     position: absolute;
