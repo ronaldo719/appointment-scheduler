@@ -5,12 +5,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import "react-slideshow-image/dist/styles.css";
 import serviceImg from '../images/hair+top+banner+image.jpg'
-import Navbar from "../Navbar";
 import { useTranslation } from 'react-i18next';
 
 
 const fadeImages = () => {
-    // const logo = require("../images/slideshow/IMG_0992.JPG")
+
     const images = [
         require("../images/slideshow/IMG_0992.JPG"),
         require("../images/slideshow/IMG_1038.JPG"),

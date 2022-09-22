@@ -7,7 +7,7 @@ export default function Team() {
     const { t } = useTranslation();
     return (
         <div className="pageContainer">
-            {/* <Navbar /> */}
+
             <div className="topPage">
                 <img className="pageImg" src={teamImg} alt="green flower"></img>
                 <h1 className="pageTitle">{t('team:teamTitle')}</h1>

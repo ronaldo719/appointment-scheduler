@@ -2,7 +2,6 @@ import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
 import Navbar from "../Navbar";
 import { useTranslation } from 'react-i18next';
-import logo from '/Users/ronaldog/Documents/maryswebsite/maryswebsite/src/images/logo.png'
 const serviceID = process.env.REACT_APP_SERVICE_ID;
 const templateID = process.env.REACT_APP_TEMPLATE_ID;
 const publicKey = process.env.REACT_APP_PUBLIC_KEY;
@@ -38,10 +37,10 @@ export default function Contact() {
     return (
 
         <div className="pageContainer">
-            {/* <Navbar /> */}
+
             <div>
                 <h1 className="contactTitle">{t('contact:contact')}</h1>
-                {/* <img src={logo} ></img> */}
+
             </div>
 
             <div className="mainContent">
