@@ -5,7 +5,6 @@ import logo from './images/logo.png'
 
 
 export default function Navbar(props) {
-    const [displayNav, setDisplayNav] = useState(true);
     const [toggleButtonActive, setActive] = useState(false);
 
     const { t } = useTranslation();
@@ -22,7 +21,7 @@ export default function Navbar(props) {
     return (
 
         < div >
-            <nav className="nav" style={{ display: displayNav ? '' : 'none', height: toggleButtonActive === true ? 'auto' : '12vh' }
+            <nav className="nav" style={{ height: toggleButtonActive === true ? 'auto' : '12vh' }
             }>
                 <div className="navMainContainer">
                     <div className="site-title" >
@@ -44,7 +43,7 @@ export default function Navbar(props) {
                         </ul>
                     </div>
                 </div>
-                {/* <Link className="bookAppointment" onClick={(e) => setDisplayNav(false)} to="/appointment">{t('book')}</Link> */}
+
                 <div className="changeLanguage">
                     <button onClick={changeLanguage} value='en' className="language">English</button>
                     <button onClick={changeLanguage} value='es' className="language">Español</button>
