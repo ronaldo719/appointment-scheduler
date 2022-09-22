@@ -3,13 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { useState } from "react";
 import logo from './images/logo.png'
 
+
 export default function Navbar(props) {
     const [displayNav, setDisplayNav] = useState(true);
     const [toggleButtonActive, setActive] = useState(false);
-    // if (props.disableNav === true) {
-    //     setDisplayNav(true);
-    // }
-
 
     const { t } = useTranslation();
     const { i18n } = useTranslation();

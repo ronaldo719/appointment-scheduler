@@ -48,13 +48,9 @@
     position: relative;
     overflow: hidden;
     width: 80%;
-    /* object-fit: contain; */
-    /* height: 50%; */
     right: 5%;
     padding:0;
-    /* height: 50%; */
     margin: 0;
-    /* margin-left: calc(30%); */
     z-index: 1; 
 }
 .messageContainer{
@@ -66,7 +62,6 @@
     margin: 0;
     text-align: left;
     background-color: #7ea097; 
-    /* border: 1px solid red;  */
 }
 
 
