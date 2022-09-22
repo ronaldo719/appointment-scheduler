@@ -1,8 +1,6 @@
 
 nav {
     width: 100%;
-       position: fixed;
-        top: 0;
 }
 
 .nav {
@@ -172,7 +170,6 @@ nav {
 @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
 
     .toggle-button {
-        /* margin-top: 5px; */
         display: flex;
     }
 
@@ -192,8 +189,9 @@ nav {
 
 
     .nav {
-        /* position: relative; */
+        position: relative;
         justify-content: center;
+        background-color: rgba(127,160,151); 
         height: 2rem;
         width: 100%;
         padding-top: 2rem;
@@ -256,7 +254,8 @@ nav {
 
 
     .nav {
-        /* position: relative; */
+        position: relative;
+        background-color: rgba(127,160,151); 
         justify-content: center;
         width: 100%;
         padding-top: 3rem;
@@ -309,7 +308,8 @@ nav {
     font-size: 1.2rem;
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
+    position: relative;
+    background-color: rgba(127,160,151); 
     padding: 0 1.5rem;
 }
 
