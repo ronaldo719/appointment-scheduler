@@ -1,6 +1,7 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { useState } from "react";
+import logo from './images/logo.png'
 
 export default function Navbar(props) {
     const [displayNav, setDisplayNav] = useState(true);
@@ -27,8 +28,8 @@ export default function Navbar(props) {
             <nav className="nav" style={{ display: displayNav ? '' : 'none', height: toggleButtonActive === true ? 'auto' : '12vh' }
             }>
                 <div className="navMainContainer">
-                    <div>
-                        <Link to="/" className="site-title">{t('title')}</Link>
+                    <div className="site-title" >
+                        <Link to="/" ><img src={logo} className="logo" ></img></Link>
                     </div>
                     <a href="#" className="toggle-button" onClick={(e) => setActive(!toggleButtonActive)} >
                         <span className="bar"></span>

@@ -1,9 +1,12 @@
 
 nav {
     width: 100%;
+       position: fixed;
+        top: 0;
 }
 
 .nav {
+    width: 100%;
     z-index: 9998;
     background-color: rgba(127,160,151,.9); 
     color: white;
@@ -13,6 +16,19 @@ nav {
 
 img{
     border: 0;
+}
+
+.site-title{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 20%;
+    object-fit: scale-down;
+    max-height: 11vh;
+}
+
+.logo {
+    max-height: 11vh;
 }
 
 .toggle-button {
@@ -34,7 +50,7 @@ img{
 }
 .navBar-links {
     display: block;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .nav ul {
@@ -47,9 +63,9 @@ img{
 }
 
 .site-title{
-    font-size: 2rem;
+    /* font-size: 2rem;
     font-weight: 540;
-    font-family: cursive;
+    font-family: cursive; */
 }
 
 .nav a {
@@ -111,15 +127,11 @@ nav {
 }
 
 .nav {
-    /* display: none; */ 
-    /* height: calc(10%); */
     font-size: 1.2rem;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 0 2rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale;
 }
 
 .navMainContainer {
@@ -128,14 +140,9 @@ nav {
 
 }
 
-.site-title {
-    /* padding: 1rem 0; */
-    /* border: 1px solid red; */
-    text-align: left;
-}
-
 .navBar-links {
-    margin-left: calc(10%);
+    width: 60%;
+    padding-left: calc(30%);
     font-size: 1.4rem;
 }
 
@@ -165,7 +172,7 @@ nav {
 @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
 
     .toggle-button {
-        margin-top: 5px;
+        /* margin-top: 5px; */
         display: flex;
     }
 
@@ -185,22 +192,22 @@ nav {
 
 
     .nav {
-        position: relative;
-        /* display: none; */
+        /* position: relative; */
         justify-content: center;
         height: 2rem;
         width: 100%;
-        padding: 0 12px;
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         flex-direction: column;
-        /* align-items: center; */
-        font-size: 19px;
+        font-size: 1.2rem;
     }
 
+    .site-title {
+        width: 35%;
+        height: auto;
+    }
     
     .navBar-links {
         display: none;
-        /* border: 1px solid red; */
         width: 100%;
         
     }
@@ -208,19 +215,12 @@ nav {
     .navBar-links ul {
         width: 100%;
         flex-direction: column;
-        /* margin-bottom: .5rem; */
 
     }
 
     .navBar-links ul li {
         text-align: center;
         padding: .5rem 1rem;
-    }
-
-    
-    .site-title {
-        font-size: 1.5rem;
-        /* margin: 1rem; */
     }
 
      .navBar-links.active {
@@ -233,7 +233,7 @@ nav {
 }
 
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+@media only screen and (min-device-width : 480px) and (max-device-width : 829px) {
 
     .toggle-button {
         margin-top: 5px;
@@ -256,22 +256,17 @@ nav {
 
 
     .nav {
-        position: relative;
-        /* display: none; */
+        /* position: relative; */
         justify-content: center;
-        /* height: 4rem; */
         width: 100%;
-        padding: 0 12px;
-        padding-top: 1.5rem;
+        padding-top: 3rem;
         flex-direction: column;
-        /* align-items: center; */
         font-size: 19px;
     }
 
+
     .navBar-links {
         display: none;
-        /* border: 1px solid red; */
-        /* z-index: 99999; */
         width: 100%;
         
     }
@@ -279,7 +274,6 @@ nav {
     .navBar-links ul {
         width: 100%;
         flex-direction: column;
-        /* margin-bottom: .5rem; */
 
     }
     
@@ -290,11 +284,6 @@ nav {
         padding: .5rem 1rem;
     }
 
-    
-    .site-title {
-        font-size: 1.5rem;
-        /* margin: 1rem; */
-    }
 
      .navBar-links.active {
         display: block;
@@ -310,7 +299,7 @@ nav {
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 830px) and (max-device-width : 1024px) {
 nav {
     position: fixed;
     top:0;
@@ -320,11 +309,8 @@ nav {
     font-size: 1.2rem;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    /* gap: 2rem; */
+    /* position: relative; */
     padding: 0 1.5rem;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale;
 }
 
 .navMainContainer {
@@ -333,14 +319,10 @@ nav {
 
 }
 
-.site-title {
-    text-align: left;
-    font-size: 1.7rem;
-}
 
 .navBar-links {
-    display: block;
-    margin-left: calc(2%);
+     width: 60%;
+     padding-left: calc(25%);
     font-size: 1.3rem;
 }
 

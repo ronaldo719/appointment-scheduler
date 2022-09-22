@@ -76,10 +76,7 @@ export default function Services() {
                             <h1 className="serviceHeaders">{t('services:haircuts&styling')}</h1>
                             <p>
                                 {t('services:haircutsMessage1')}
-                                <br></br>
-                                <br></br>
 
-                                {t('services:haircutsMessage2')}
                             </p>
                         </div>
                         <hr className="innerLine"></hr>
@@ -87,11 +84,6 @@ export default function Services() {
                             <h1 className="serviceHeaders">{t('services:chemical')}</h1>
                             <p>
                                 {t('services:chemicalpart1')}
-
-                                <br></br>
-                                <br></br>
-
-                                {t('services:chemicalpart2')}
                             </p>
 
                         </div>
