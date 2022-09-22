@@ -27,6 +27,8 @@ export default function Team() {
                                 <b>{t('team:services')}</b>: {t('team:servicesMessage')}
                                 <br></br>
                                 <b>{t('team:experience')}</b>: {t('team:years')}
+                                <br></br>
+                                <b>{t('team:personalNumber')}</b>: (707) 304-2461
                             </p>
                         </div>
                         <div className="gridItem">
@@ -36,13 +38,15 @@ export default function Team() {
                                 <b>{t('team:services')}</b>: {t('team:servicesMessage')}
                                 <br></br>
                                 <b>{t('team:experience')}</b>: {t('team:years')}
+                                <br></br>
+                                <b>{t('team:personalNumber')}</b>: (707) 927-8106
                             </p> </div>
                     </div>
                 </div>
                 <hr className="footerLine"></hr>
                 <div className="foot">
                     <p className="footAddress">
-                        (707) 304-2461 <br></br>
+                        (707) 253-9312  <br></br>
                         <br></br>
                 3046 Jefferson Street<br></br>
                 Napa, CA 94558<br></br>

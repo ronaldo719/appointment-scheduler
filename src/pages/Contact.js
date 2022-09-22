@@ -51,7 +51,7 @@ export default function Contact() {
                         <div className="contactInfo">
                             <h2 className="locationTitles">{t('contact:call')}</h2>
                             <p>
-                                <b>{t('contact:phone')}</b> (707) 304-2461
+                                <b>{t('contact:phone')}</b> (707) 253-9312
                         <br></br>
                                 <br></br>
                                 {t('contact:walkin')}
@@ -138,7 +138,7 @@ export default function Contact() {
                 <hr className="footerLine"></hr>
                 <div className="foot">
                     <p className="footAddress">
-                        (707) 304-2461 <br></br>
+                        (707) 253-9312  <br></br>
                         <br></br>
                 3046 Jefferson Street<br></br>
                 Napa, CA 94558<br></br>

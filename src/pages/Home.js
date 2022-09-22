@@ -76,7 +76,7 @@ export default function Home() {
                 <div className="locationContainer">
                     <h1 className="locationTitle">{t('home:location')}</h1>
                     <p className="locationAddress">
-                        Mary's Salon <br></br>
+                        Mary's Hair Cuts <br></br>
                     3046 Jefferson Street <br></br>
                     Napa, CA 94558
                 </p>
@@ -89,7 +89,7 @@ export default function Home() {
                 <hr className="footerLine"></hr>
                 <div className="foot">
                     <p className="footAddress">
-                        (707) 304-2461 <br></br>
+                        (707) 253-9312 <br></br>
                         <br></br>
                 3046 Jefferson Street<br></br>
                 Napa, CA 94558<br></br>
