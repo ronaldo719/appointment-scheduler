@@ -1,5 +1,6 @@
 import teamImg from '../images/team-banner-image.jpg'
 import olgaImg from '../images/staff/IMG_2066.jpg'
+import maryImg from '../images/staff/IMG_1619.jpg'
 import { useTranslation } from 'react-i18next';
 
 export default function Team() {
@@ -31,7 +32,7 @@ export default function Team() {
                             </p>
                         </div>
                         <div className="gridItem">
-                            <img className="staffPicture" src={olgaImg} alt="Mary's selfie"></img>
+                            <img className="staffPicture" src={maryImg} alt="Mary's selfie"></img>
                             <h2 className="staffTitle">Mary | {t('team:jobTitle')}</h2>
                             <p>
                                 <b>{t('team:services')}</b>: {t('team:servicesMessage')}

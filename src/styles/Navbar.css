@@ -85,20 +85,20 @@ img{
 .changeLanguage {
     position: fixed;
     top: 0.5%;
-    right: 2rem;
+    right: 3rem;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .language {
     background-color: inherit; 
     border: 1px solid white;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 5px 10px;
-    border-radius: 100px;
+    border-radius: 999px;
 }
 
 .language:hover {
@@ -134,13 +134,13 @@ nav {
 .navBar-links {
     width: 60%;
     padding-left: calc(30%);
-    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 
 .bookAppointment {
     position: absolute;
-    top: 5vh;
+    top: 6vh;
     right: 5%;
     height: 100%;
 }
