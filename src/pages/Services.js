@@ -44,7 +44,7 @@ const fadeImages = () => {
 
     return (
         <div>
-            <Fade nextArrow={properties.nextArrow} prevArrow={properties.prevArrow} duration={4000} >
+            <Fade nextArrow={properties.nextArrow} prevArrow={properties.prevArrow} duration={4000} pauseOnHover={false} >
                 {
                     images.map((fadeImage, index) => (
                         <div className="each-slide" key={index}>
