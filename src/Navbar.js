@@ -4,20 +4,17 @@ import { useState } from "react";
 import logo from './images/logo.png'
 
 
-export default function Navbar(props) {
+export default function Navbar() {
     const [toggleButtonActive, setActive] = useState(false);
 
     const { t } = useTranslation();
     const { i18n } = useTranslation();
 
-    let path = window.location.pathname;
-
+    // function used to change the websites language
     function changeLanguage(e) {
         i18n.changeLanguage(e.target.value);
     }
 
-
-    // console.log(displayNav);
     return (
 
         < div >

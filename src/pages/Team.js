@@ -1,6 +1,5 @@
 import teamImg from '../images/team-banner-image.jpg'
 import olgaImg from '../images/staff/IMG_2066.jpg'
-import Navbar from "../Navbar";
 import { useTranslation } from 'react-i18next';
 
 export default function Team() {

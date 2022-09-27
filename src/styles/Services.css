@@ -67,8 +67,6 @@ hr {
 }
 
 .slideContainer {
-    /* border: 1px solid red; */
-    /* margin: 50px; */
     width: 100%;
     border-radius: 10px;
     background-image: url(../images/Green+Gradient_2560x1200px.png); 
@@ -77,9 +75,6 @@ hr {
 .each-slide {
   display: flex;
   width: 100%;
-  /* height: 1000px; */
-  /* margin: 50px; */
-  /* padding: 10px; */
 }
 
 
@@ -95,7 +90,6 @@ hr {
 
 .slideShowButtons {
     transition: all .2s ease-in-out;
-    /* border: 1px solid red; */
 }
 
 .slideShowButtons:hover {
@@ -120,13 +114,9 @@ hr {
 }
 
 .haircuts {
-
-    /* border: 1px solid blue; */
     width: 100%;
     height: auto;
     padding: 17px 0;
-    /* padding: 17px; */
-    /* margin-left: 100px; */
 }
 
 .serviceHeaders{
@@ -137,29 +127,20 @@ hr {
 .innerLine {
     position: relative;
     width: 100%;
-    /* margin: 0 17px; */
-    /* padding: 17px; */
     height: 1px;
-
-    /* margin: 17px; */
     border-width:0;
 }
 
 .chemicalServices {
     position: relative;
-    /* border: 1px solid blue; */
     width: 100%;
     padding: 17px 0;
-    /* height: 350px; */
-    /* padding: 17px; */
-    /* margin-left: 100px; */
 }
 
 .prices {
     position: absolute;
     display: inline;
     text-align: left;
-    /* border: 1px solid blue; */
     width: 40%;
     height: 100%;
     top: 0%;
@@ -254,12 +235,8 @@ hr {
 }
 
 .haircuts {
-
-    /* border: 1px solid blue; */
     width: 100%;
     height: auto;
-    /* padding: 17px; */
-    /* margin-left: 100px; */
 }
 
 .serviceHeaders{
@@ -276,11 +253,7 @@ hr {
 
 .chemicalServices {
     position: relative;
-    /* border: 1px solid blue; */
     width: 100%;
-    /* height: 350px; */
-    /* padding: 17px; */
-    /* margin-left: 100px; */
 }
 
 .prices {

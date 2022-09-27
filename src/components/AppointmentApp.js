@@ -9,7 +9,6 @@ import moment from 'moment';
 
 
 const API_BASE = process.env.REACT_APP_BASE_URL;
-// const API_BASE = `https://marysappointments-api.herokuapp.com/api/`;
 
 class AppointmentApp extends Component {
 
@@ -57,6 +56,8 @@ class AppointmentApp extends Component {
             appointmentDeleted: false
         };
     }
+
+    // function handles loading the appointments from MongoDB database
     componentDidMount() {
 
 
@@ -70,9 +71,10 @@ class AppointmentApp extends Component {
         });
     }
 
+    // function handles calling and popullating our state variables 
     handleDBReponse(response, currStaffDatabase) {
         const appointments = response;
-        console.log(appointments);
+
         const initialIntervalTimesForOlga = new Map();
         const initialIntervalTimesForMary = new Map();
 
@@ -86,6 +88,8 @@ class AppointmentApp extends Component {
 
     }
 
+
+    // function handles polluating our state variables with the current appointments in the MongoDB database based on the appointment date as the key and the value as the appointments for that day
     popullateStaffAppointments(currStaffAppointments, currStaffInitialIntervalTimes) {
         currStaffAppointments.map((item, i) => {
             let appointment_date = moment(item.appointment_date).format('l');
@@ -105,7 +109,7 @@ class AppointmentApp extends Component {
 
     }
 
-
+    // functions handles removing overlap times from the interval times variable
     updateIntervalTimes(currIntervalTimes, category, startTime) {
         for (let i = 0; i < currIntervalTimes.length; i++) {
             if (category == 'color' && currIntervalTimes[i] == startTime) {
@@ -121,6 +125,7 @@ class AppointmentApp extends Component {
         return currIntervalTimes;
     }
 
+    // function handles popullating and displaying our services depending on there category chosen
     handleServiceOptions(category) {
         let serviceOptions = []
         this.state.categoryServices.get(category.target.value).map(service => {
@@ -129,6 +134,8 @@ class AppointmentApp extends Component {
         this.setState({ category: category.target.value, services: serviceOptions[0].props.value, serviceOptions: serviceOptions })
     }
 
+
+    // function handles finding and displaying available interval times based on the information provided
     handleSearch = async (event) => {
         event.preventDefault();
         this.setState({ currAppointmentStep: 2, displayDate: moment(this.state.appointmentDate).format('l') });
@@ -156,6 +163,8 @@ class AppointmentApp extends Component {
         });
     }
 
+
+    // function handles obtaining the service duration based on the category provided
     getServiceTime(category) {
         switch (category) {
             case 'color':
@@ -167,6 +176,8 @@ class AppointmentApp extends Component {
         }
     }
 
+
+    // function handles obtaining all available interval times based on the service time per staff member 
     getStaffTimes = async (currStaffTimes, defaultTimes, currAppointmentDate, currAvailableTimesForStaff, serviceTime) => {
         if (currStaffTimes.has(currAppointmentDate)) {
             let currIntervalTimes = await currStaffTimes.get(currAppointmentDate);
@@ -178,7 +189,7 @@ class AppointmentApp extends Component {
     }
 
 
-
+    // function handles going back a step from the current step
     handleBackButton = async (event) => {
         event.preventDefault();
         switch (this.state.currAppointmentStep) {
@@ -194,6 +205,7 @@ class AppointmentApp extends Component {
         }
     }
 
+    // function handles returns a section of interval times based on the clients time chosen
     getIntervalTimes(currIntervalTimes, typeOfTime, serviceTime) {
         let index = 0;
         let currTime = currIntervalTimes[index];
@@ -240,7 +252,7 @@ class AppointmentApp extends Component {
 
     }
 
-
+    // function handles adding the duration of the service time to the start time
     addServiceTime(startTime, serviceTime) {
         let startTimeHour = startTime / 100;
         let serviceTimeHour = serviceTime / 100;
@@ -254,6 +266,7 @@ class AppointmentApp extends Component {
         return Math.trunc((totalHours * 100) + totalMins);
     }
 
+    // functions handles converting our backend 24 hour format to conventional 12 hour format
     convertTo12Format(currTime) {
         let h1 = currTime.charCodeAt(0) - "0".charCodeAt(0);
         let h2 = currTime.charCodeAt(1) - "0".charCodeAt(0);
@@ -286,22 +299,27 @@ class AppointmentApp extends Component {
         return finalTime;
     }
 
+
+    // function handles setting the current appointment step to the book appointment step which is where the client input their contact information 
     handleBookAppointment = async (event, staffName) => {
         event.preventDefault();
         this.setState({ currAppointmentStep: 3, staff: staffName })
     }
 
+    //fucntions handles evaluating the client phone number 
     validatePhone(phoneNumber) {
         console.log(phoneNumber);
         const regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
         return regex.test(phoneNumber);
     }
-
+    //fucntions handles evaluating the client email
     validateEmail(email) {
         const regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         return regex.test(email);
     }
 
+
+    // function handles adding appointment to MongoDB database and if successful continuing to the final step 
     handleAppointmentInformation = async (event) => {
         event.preventDefault();
         if (this.state.submitted) {
@@ -347,9 +365,6 @@ class AppointmentApp extends Component {
         }
         let timeIn12 = await this.convertTo12Format(startTime.toString());
         this.setState({ currAppointmentStep: 4, display12Time: timeIn12, clientPhone: phoneNumber })
-        let currStaff = this.state.staff.toLowerCase();
-        console.log(newAppointment);
-        console.log(this.state.services);
         axios
             .post(`${API_BASE}${this.state.staff.toLowerCase()}appointmentCreate`, newAppointment)
             .then(response =>
@@ -362,6 +377,7 @@ class AppointmentApp extends Component {
 
     }
 
+    // function handles deleting the appointment from MongoDB database in case client changes their mind 
     deleteAppointment = async (event) => {
         event.preventDefault();
         const phoneNum = await this.state.clientPhone;
@@ -386,7 +402,7 @@ class AppointmentApp extends Component {
     }
 
 
-
+    //function handles return the client to the home page
     returnHome = async (event) => {
         return (
             <Link to='/home' className="homeButton"></Link>
@@ -409,6 +425,7 @@ class AppointmentApp extends Component {
             [t('appointment:waxService'), "15-20"]
         ]);
 
+        // function handles not displaying closed days as options for appointments
         const closedDays = (date) => {
             const day = date.getDay();;
             return day !== 0;

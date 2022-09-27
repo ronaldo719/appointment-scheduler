@@ -18,7 +18,6 @@
     opacity: 1;
     height: 100%;
     object-fit: cover;
-    /* object-fit: contain; */
   }
 
 
@@ -83,7 +82,6 @@
 
 .homeHours {
     position: relative;
-    /* top: 69%; */
     color: white;
     text-align: left;
     padding: 1.5rem;
@@ -95,16 +93,13 @@
     font-size: 2rem;
     margin:0;
     margin-bottom: 5px;
-    /* border: 1px solid blue; */
     font-weight: 700;
 }
 
 
 .homeHours ul {
-    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
-    /* margin: 0; */
     list-style: none;
 }
 
@@ -153,7 +148,6 @@ hr {
 .locationAddress {
     color: #303030;
     line-height: 22px;
-    /* border: 1px solid red; */
 }
 
 .foot {
@@ -161,7 +155,6 @@ hr {
     color: rgba(28,28,28,.69);
     width: 100%;
     font-weight: 700;
-    /* margin: 50px; */
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -170,7 +163,6 @@ hr {
     font-style: italic;
     font-weight: 400;
   padding: 0  30px;
-    /* font-weight: 100; */
 }
 
 .footAddress {
@@ -181,32 +173,23 @@ hr {
   /* big landscape tablets, laptops, and desktops */ 
 @media (min-width:1025px) { 
 
-  .middleContent {
-    /* justify-content: space-between; */
-    /* gap: 2rem; */
-  }
   .leftSide {
     position: relative;
     width: calc(60%);
     display: flex;
     flex-direction: row-reverse;
     margin: 0;
-    /* height: 100%; */
     padding: 0;
-    /* margin-right: 20px; */
-    /* margin-right: 10px;s */
   }
 
   .messageContainer{
     position: absolute;
 
     width: 40%;
-    /* left: 10%; */
     padding: calc(7%);
     top: 20%;
     left: 0;
     height: 70%;
-    /* height: ; */
   }
 
 
@@ -251,7 +234,6 @@ hr {
   .pageTitle {
     font-size: 1.5rem;
     font-weight: 600;
-    /* top: 30%;s */
   }
 
   .middleContent{
@@ -272,7 +254,6 @@ hr {
 .womenHaircut {
   position: absolute;
   top: 0;
-  /* left: 0; */
   right: 0;
   display: block;
   width: calc(80%);
@@ -284,7 +265,6 @@ hr {
   width: calc(100% - 30%);
   margin-top: calc(60%);
   display: block;
-  /* top: 70%; */
   padding: 10% 14%;
 }
 
@@ -326,7 +306,6 @@ hr {
   .leftSide {
     position: relative;
     margin: 0;
-  /* padding: 0 calc(5%); */
     width: 100%;
     padding: 0;
     height: 100%;
@@ -381,14 +360,11 @@ hr {
     flex-direction: row-reverse;
     margin: 0;
     padding: 0;
-    /* height: 100%; */
   }
 
   .messageContainer{
     position: absolute;
-/* display: inline; */
     width: 40%;
-    /* left: 10%; */
     padding: calc(7%);
     top: 20%;
     left: 0;
@@ -407,7 +383,6 @@ hr {
     margin-top: 10px;
     padding: 0;
     font-size: 13px;
-    /* height: 0px; */
 }
 
 .titleMessage {

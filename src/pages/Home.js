@@ -1,6 +1,5 @@
 import homeImg from '../images/hair_salon_stations.jpeg'
 import womenHaircut from "../images/Women's+haircut.jpg"
-import Navbar from "../Navbar";
 import { useTranslation } from 'react-i18next';
 
 export default function Home() {

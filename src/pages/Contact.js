@@ -1,6 +1,5 @@
 import emailjs from "emailjs-com";
 import { useState, useRef } from "react";
-import Navbar from "../Navbar";
 import { useTranslation } from 'react-i18next';
 const serviceID = process.env.REACT_APP_SERVICE_ID;
 const templateID = process.env.REACT_APP_TEMPLATE_ID;
@@ -12,6 +11,9 @@ export default function Contact() {
     const [formSent, setFormSent] = useState(false);
     const { t } = useTranslation();
 
+
+
+    // function sends a email to the salon's email account regarding the person's message
     const sendEmail = (e) => {
         e.preventDefault();
 

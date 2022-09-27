@@ -37,7 +37,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /* height: 100%; */
 }
 
 .locationHours li {
@@ -146,7 +145,6 @@
 }
 
 .contactForm {
-    /* padding: 17px; */
     font-size: 18px;
     font-weight: normal;
 }
@@ -192,7 +190,6 @@
 }
 
 .contactForm {
-    /* padding: 17px; */
     font-size: 18px;
     font-weight: normal;
 }

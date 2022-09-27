@@ -8,6 +8,9 @@ import serviceImg from '../images/hair+top+banner+image.jpg'
 import { useTranslation } from 'react-i18next';
 
 
+
+
+// function uses a react library to display a slideshow of our images and uses a fade away feature
 const fadeImages = () => {
 
     const images = [

@@ -20,6 +20,8 @@ export default function Delete() {
     const [currAppointment, setAppointment] = useState("");
     let appointmentFound = false;
     let appointments = [];
+
+    // function handles finding appointment based on the information provided from the MongoDB database
     const handleSubmit = async (event) => {
         event.preventDefault();
         await axios.get(`${API_BASE}${staff}appointments`).then(response => {
@@ -54,6 +56,8 @@ export default function Delete() {
 
     }
 
+
+    // function handles displaying the appointment found and a delete button to delete the appointment displayed
     const displayAppointmentInfo = (appointment) => {
 
         return (
@@ -83,7 +87,7 @@ export default function Delete() {
 
     }
 
-
+    // function handles deleting the appointment from the MongoDB database
     const deleteAppointment = async (event) => {
         event.preventDefault();
         const phoneNum = phone;
