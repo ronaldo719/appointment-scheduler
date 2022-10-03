@@ -14,12 +14,17 @@ import { useTranslation } from 'react-i18next';
 const fadeImages = () => {
 
     const images = [
-        require("../images/slideshow/IMG_0992.JPG"),
-        require("../images/slideshow/IMG_1038.JPG"),
-        require("../images/slideshow/IMG_1129.JPG"),
-        require("../images/slideshow/IMG_1130.JPG"),
-        require("../images/slideshow/IMG_1168.JPG"),
-        require("../images/slideshow/IMG_1177.JPG")
+        require("../images/slideshow/IMG_4300.jpeg"),
+        require("../images/slideshow/IMG_4301.jpeg"),
+        require("../images/slideshow/IMG_4281.jpeg"),
+        require("../images/slideshow/IMG_4283.jpeg"),
+        require("../images/slideshow/IMG_4282.jpeg"),
+        require("../images/slideshow/IMG_4321.jpeg"),
+        require("../images/slideshow/IMG_4562.jpeg"),
+        require("../images/slideshow/IMG_4637.jpeg"),
+        require("../images/slideshow/IMG_4271.jpeg"),
+        require("../images/slideshow/IMG_4272.jpeg")
+
     ];
 
     const nextArrow = <FontAwesomeIcon icon={faArrowRight} />

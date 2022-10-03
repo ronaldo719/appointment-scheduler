@@ -9,12 +9,12 @@ p {
 
 
 .hairServices {
-      position: relative;
-      display: block;
-        width: 100%;
-        height: auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
     margin-top: 100px;
-      text-align: left;
+    text-align: left;
 }
 
 .haircuts {
@@ -68,7 +68,9 @@ hr {
 
 .slideContainer {
     width: 100%;
+    height: 55vh;
     border-radius: 10px;
+    margin-top: 2rem;
     background-image: url(../images/Green+Gradient_2560x1200px.png); 
 }
 
@@ -80,11 +82,12 @@ hr {
 
 .each-slide>div {
   width: 100%;
+
 }
 
 .each-slide>div img {
   width: 100%;
-  height: 100%;
+  height: 55vh;
   object-fit: contain;
 }
 
@@ -153,13 +156,15 @@ hr {
     line-height: 24px;
 }
 
+.slideContainer {
+    margin-top: 4rem;
+}
+
 .priceLine {
     margin: 30px 5px;
 }
 
-.each-slide {
-  height: 1000px;
-}
+
 
 
 
