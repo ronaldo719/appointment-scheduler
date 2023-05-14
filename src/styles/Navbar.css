@@ -14,7 +14,6 @@ nav {
     box-sizing: border-box;
     /* border: 1px solid red; */
     min-height: 20vh;
-    max-height: 20vh;
     text-transform: uppercase;
 }
 
@@ -46,7 +45,8 @@ img{
 .logo_img {
     object-fit: contain;
     width: 100%;
-    height: auto;
+    max-height: 80%;
+    margin-top: 5%;
 }
 
 .salonName {
@@ -55,9 +55,6 @@ img{
     font-weight: 700;
 }
 
-.nav a {
-    /* width: 10%; */
-}
 
 .toggle-button {
     position: absolute;
@@ -73,12 +70,12 @@ img{
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
 }
 .navBar-links {
     display: block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -122,24 +119,19 @@ img{
     display: flex;
     color: black;
     background: none;
-    /* border:1px solid green; */
-    /* margin-left: 50px; */
-    /* justify-content: space-between; */
+    /* font-size: 0.5rem; */
 }
 
 .englishActive, .spanishActive {
-    /* height: 25%; */
     margin: 0;
     background: none;
-    /* padding: 0; */
     font-family: inherit;
     border: none;
-    /* border: 1px solid red; */
-    /* color: white; */
     font-size: 0.7rem;
 } 
 
 .spanishDeactive {
+    font-size: 0.5rem;
     border: none;
     background: none;
     /* background-color: white; */
@@ -148,14 +140,13 @@ img{
 }
 
 .englishDeactive {
+     font-size: 0.5rem;
     background: none;
     border: none;
     color: #999999;
     border-right: 0.5px solid #999999;
 
 }
-   
-
 
 .language:hover {
     cursor: pointer;
@@ -168,90 +159,71 @@ img{
 
 @media (min-width:1025px) { 
 
-.nav {
-    /* font-size: 1.1rem; */
-    /* padding: 20px 76px; */
-}
-
-.navMainContainer {
-    /* min-width: 0; */
-    /* max-width: 100%; */
-}
-
 .salonName {
     font-size: 2rem;
     padding-left: 1rem;
 }
 
-.logo_img {
-    max-width: 90%;
-}
-
 .navBar-links {
-    font-size: 1.3rem;
-}
-
-}
- 
-
-/*
-.bookAppointment {
-    position: absolute;
-    top: 6vh;
-    right: 5%;
-    height: 100%;
+    font-size: 1.2rem;
 }
 
 
+}
 
- .bookAppointment:hover {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 3px;
-} */
-
-
-/* } */
 
 /* Smartphones (portrait and landscape) ----------- */
-/* @media screen and (min-width : 300px) and (max-width : 480px) {
+@media screen and (min-width : 300px) and (max-width : 480px) {
 
     .toggle-button {
         display: flex;
     }
 
-    .changeLanguage {
-        position: absolute;
-        top:0.5rem;
-        right: 1rem;
-        gap: 5px;
-        right: 1rem;
-    }
-
-    .language {
-        padding: 5px;
-        font-size: 0.7rem;
-    }
-
     .nav {
-        padding: 8px 15px;
         width: 100%;
-        flex-direction: column;
-        font-size: 1rem;
+        display: block;
+        /* flex-direction: column; */
+        height: auto;
+        /* align-items: center; */
     }
 
-    .logo {
-        max-width: 150px;
+    .navMainContainer{
+        display: block;
+        height: auto;
+    }
+
+
+    .salon_title_logo {
+        /* border: 1px solid blue; */
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 1rem;
+         margin-left: 0;
+    }
+
+    .logo_div {
+        margin-left: 5%;
+        
+    }
+
+    .salonName {
+        font-size: 0.9rem;
+        padding-left: 5px;
     }
     
     .navBar-links {
         display: none;
+        position: relative;
+        height: 100%;
         width: 100%;
+        /* border: 1px solid green; */
         
     }
 
     .navBar-links ul {
         width: 100%;
+        height: 100%;
         flex-direction: column;
 
     }
@@ -268,7 +240,23 @@ img{
         text-align: center;
         
     }
-} */
+
+    .changeLanguage {
+        position: absolute;
+        top: 2%;
+        left: 70%;
+    }
+
+    .englishActive, .spanishActive {
+        font-size: 0.6rem;
+    }
+
+    .spanishDeactive, .englishDeactive {
+        font-size: 0.5rem;
+    }
+
+    /* .e */
+} 
 
 
 /* @media screen and (min-width : 480px) and (max-width : 829px) {
