@@ -1,15 +1,28 @@
 
-
 nav {
     width: 100%;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
 }
 
 .nav {
-    width: 100%;
+    /* width: 100%; */
     z-index: 9998;
-    background-color: rgba(127,160,151,.9); 
-    color: white;
+    color: black;
     display: flex;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    min-height: 20vh;
+    max-height: 20vh;
+    text-transform: uppercase;
+}
+
+.navMainContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
 }
 
 
@@ -17,17 +30,33 @@ img{
     border: 0;
 }
 
-.site-title{
-    position: absolute;
-    top: 10%;
-    left: 3%;
+.salon_title_logo{
+    line-height: 0;
+    display: flex;
+    width: 45%;
+    margin-left: calc(5%);
+    height: auto;
+} 
+
+.logo_div{
+    height: auto;
     width: 20%;
-    object-fit: scale-down;
-    max-height: 11vh;
 }
 
-.logo {
-    max-height: 11vh;
+.logo_img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.salonName {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav a {
+    /* width: 10%; */
 }
 
 .toggle-button {
@@ -49,6 +78,9 @@ img{
 }
 .navBar-links {
     display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .nav ul {
@@ -58,8 +90,7 @@ img{
     list-style: none;
     display: flex;
     gap: 2rem;
-}
-
+} 
 
 .nav a {
     color: inherit;
@@ -84,61 +115,86 @@ img{
 
 
 .changeLanguage {
-    position: fixed;
-    top: 0.5%;
-    right: 3rem;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    color: black;
+    background: none;
+    /* border:1px solid green; */
+    /* margin-left: 50px; */
+    /* justify-content: space-between; */
 }
 
-.language {
-    background-color: inherit; 
-    border: 1px solid white;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 999px;
+.englishActive, .spanishActive {
+    /* height: 25%; */
+    margin: 0;
+    background: none;
+    /* padding: 0; */
+    font-family: inherit;
+    border: none;
+    /* border: 1px solid red; */
+    /* color: white; */
+    font-size: 0.7rem;
+} 
+
+.spanishDeactive {
+    border: none;
+    background: none;
+    /* background-color: white; */
+    color: #999999;
+    border-left: 0.5px solid #999999;
 }
+
+.englishDeactive {
+    background: none;
+    border: none;
+    color: #999999;
+    border-right: 0.5px solid #999999;
+
+}
+   
+
 
 .language:hover {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-thickness: 3px;
-
+    text-decoration-thickness: 1px;
 }
+
+
 
 @media (min-width:1025px) { 
 
-
-nav {
-    position: fixed;
-    top:0;
-}
-
 .nav {
-    font-size: 1.2rem;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 2rem;
+    /* font-size: 1.1rem; */
+    /* padding: 20px 76px; */
 }
 
 .navMainContainer {
-    width: 100%;
-    display: flex;
+    /* min-width: 0; */
+    /* max-width: 100%; */
+}
 
+.salonName {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.logo_img {
+    max-width: 90%;
 }
 
 .navBar-links {
-    width: 60%;
-    padding-left: calc(30%);
-    margin-top: 1rem;
+    font-size: 1.3rem;
 }
 
+}
+ 
 
+/*
 .bookAppointment {
     position: absolute;
     top: 6vh;
@@ -152,13 +208,13 @@ nav {
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 3px;
-}
+} */
 
 
-}
+/* } */
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+/* @media screen and (min-width : 300px) and (max-width : 480px) {
 
     .toggle-button {
         display: flex;
@@ -174,25 +230,18 @@ nav {
 
     .language {
         padding: 5px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
-
-
 
     .nav {
-        position: relative;
-        justify-content: center;
-        background-color: rgba(127,160,151); 
-        height: 2rem;
+        padding: 8px 15px;
         width: 100%;
-        padding-top: 2rem;
         flex-direction: column;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .site-title {
-        width: 35%;
-        height: auto;
+    .logo {
+        max-width: 150px;
     }
     
     .navBar-links {
@@ -219,10 +268,10 @@ nav {
         text-align: center;
         
     }
-}
+} */
 
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 829px) {
+/* @media screen and (min-width : 480px) and (max-width : 829px) {
 
     .toggle-button {
         margin-top: 5px;
@@ -240,34 +289,31 @@ nav {
 
     .language {
         padding: 5px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
 
     .nav {
-        position: relative;
-        background-color: rgba(127,160,151); 
-        justify-content: center;
+        padding: 10px 30px;
         width: 100%;
-        padding-top: 3rem;
         flex-direction: column;
-        font-size: 19px;
+        font-size: 16px;
+    }
+
+    .logo {
+        max-width: 180px;
     }
 
 
     .navBar-links {
         display: none;
-        width: 100%;
-        
-    }
+        width: 100%;    
+    } 
 
     .navBar-links ul {
         width: 100%;
         flex-direction: column;
-
     }
-    
-
 
     .navBar-links ul li {
         text-align: center;
@@ -283,41 +329,40 @@ nav {
         
     }
 
-
-
-} 
+}  */
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 830px) and (max-device-width : 1024px) {
+/* @media screen and (min-width : 830px) and (max-width : 1024px) {
 nav {
     position: fixed;
     top:0;
 }
 
 .nav {
-    font-size: 1.2rem;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    background-color: rgba(127,160,151); 
-    padding: 0 1.5rem;
+    font-size: 1rem;
+    padding: 20px 30px;
 }
 
 .navMainContainer {
     width: 100%;
     display: flex;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
 
 }
 
-
-.navBar-links {
-     width: 60%;
-     padding-left: calc(25%);
-    font-size: 1.3rem;
+.logo {
+    max-width: 150px;
 }
 
-.bookAppointment {
+.language {
+    font-size: 0.8rem;
+    height: 30%;
+} */
+
+/* .bookAppointment {
     position: absolute;
     top: 5vh;
     right: 2%;
@@ -330,7 +375,7 @@ nav {
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-thickness: 3px;
-}
+} */
 
 
-}
+

@@ -1,21 +1,39 @@
  .teamContent {
    position: relative;
-    display: block;
+    /* display: block; */
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-top: 100px;
     text-align: left;
+   
  }
  
  .staffTitle {
     text-transform: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.gridItem {
+    background-image: linear-gradient(180deg, rgba(255,255,255,1),rgba(238,212,207,0.7));
+    background-color: transparent;
+    padding: calc(5%);
+    border-radius: 1rem;
 }
 
 .gridItem b{
-    text-transform: uppercase;
-    font-size: 15px;
+    /* text-transform: uppercase; */
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.gridItem p {
+    font-weight: 400;
 }
 
+.facebookIcon {
+    color:rgb(19, 19, 19);
+    margin-left: 5px;
+}
 
   /* big landscape tablets, laptops, and desktops */ 
 @media (min-width:1025px) { 
@@ -35,7 +53,10 @@
 } 
 
  .staffPicture {
+    object-fit: contain;
     width: 100%;
+    padding: calc(5%);
+    /* height: 30%; */
 }
 
 }

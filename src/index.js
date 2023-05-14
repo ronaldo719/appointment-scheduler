@@ -14,6 +14,7 @@ import './styles/Delete.css';
 import './i18n/config';
 import { BrowserRouter } from "react-router-dom"
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

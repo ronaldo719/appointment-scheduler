@@ -1,16 +1,20 @@
 
 .pageContainer{
+    position: relative;
     text-align: center;
     width: 100%;
+    font-family: 'Nunito', sans-serif;
 }
 
-.topPage {
+.homePageImg {
   position: relative;
   width: 100%;
-  height: 70vh;
+  /* margin-top: calc(13%); */
+  /* border: 1px solid red; */
+  height: 50vh;
 }
 
-.pageImg{
+.salonImg{
     display: block;
     overflow: hidden;
     z-index: 1;
@@ -18,35 +22,37 @@
     opacity: 1;
     height: 100%;
     object-fit: cover;
-  }
-
-
-  .pageTitle {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    font-size: 4rem;
-    color: white;
-    z-index: 2;
 }
 
 .mainContent {
-  padding: 0 calc(5%);
+  padding: 0 calc(10%);
+  margin-top: calc(5%);
+  /* border: 1px solid red; */
 }
 
 .middleContent{
     position: relative;
     width: 100%;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     display: flex;
-    height: 100%;
+    height: auto;
+    /* padding: 3rem 0; */
+    padding: 0 calc(5%);
+    /* border: 1px solid green; */
+    margin-bottom: calc(5%);
+}
+
+#homeMiddle {
+  margin-top: 0px;
 }
 
 
 .womenHaircut {
     position: relative;
     overflow: hidden;
-    width: 80%;
+    object-fit: cover;
+    width: 70%;
+    height: auto;
     right: 5%;
     padding:0;
     margin: 0;
@@ -55,12 +61,15 @@
 .messageContainer{
   position: relative;
   display: block;
-    z-index: 2;
-    color: white;
-    padding: 50px;
-    margin: 0;
-    text-align: left;
-    background-color: #7ea097; 
+  z-index: 2;
+  color: black;
+  padding: 50px;
+  margin: 0;
+  text-align: left;
+  background-image: linear-gradient(180deg, rgba(255,255,255,1),rgba(39,79,140,0.25));
+  background-attachment: scroll;
+  background-color: transparent;
+  height: auto;
 }
 
 
@@ -82,17 +91,21 @@
 
 .homeHours {
     position: relative;
-    color: white;
+    /* height: 70%; */
+    color: black;
     text-align: left;
     padding: 1.5rem;
     padding-left: 3rem;
-    background-color: #7ea097; 
+    background-image: linear-gradient(180deg, rgba(255,255,255,1),rgba(39,79,140,0.25));
+    background-attachment: scroll;
+    background-color: transparent;
+    /* height: auto; */
 }
 
 .hours {
     font-size: 2rem;
     margin:0;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
     font-weight: 700;
 }
 
@@ -126,8 +139,7 @@ hr {
     margin-bottom: 20px;
     height: 2px;
     border-width:0;
-    color: #c7c7c7;
-    background-color:#a4a4a4;
+    background-color:  #c7c7c7;;
 }
 
 .secondLine {
@@ -136,33 +148,50 @@ hr {
 
 .locationContainer {
     text-align: left;
+    width: 100%;
+    display: flex;
     margin: 40px 0;
+    height: 40vh;
+}
+
+.loocationInfo {
+  width: 30%;
 }
 
 .locationTitle {
     font-size: 1.2rem;
-    color: #303030;
-    font-weight: bold;
+    color: black;
+    font-weight: 700;
 }
 
 .locationAddress {
-    color: #303030;
+    color: black;
     line-height: 22px;
+}
+
+.homeMap {
+  border: 0;
+  width: 70%;
+  height: auto;
 }
 
 .foot {
     position: relative;
+    width: 100%;
     color: rgba(28,28,28,.69);
     width: 100%;
     font-weight: 700;
-    padding-top: 20px;
+    padding-top: calc(10%);
     padding-bottom: 30px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1),rgba(39,79,140,0.25));
+    background-attachment: scroll;
+    background-color: transparent;
 }
 
 .footer {
     font-style: italic;
     font-weight: 400;
-  padding: 0  30px;
+    padding: 0  30px;
 }
 
 .footAddress {
@@ -180,31 +209,35 @@ hr {
     flex-direction: row-reverse;
     margin: 0;
     padding: 0;
+    height: auto;
+    /* border: 1px solid green; */
   }
 
   .messageContainer{
     position: absolute;
-
     width: 40%;
-    padding: calc(7%);
+    line-height: 100%;
+    padding: calc(6%);
     top: 20%;
     left: 0;
-    height: 70%;
+    height: auto;
   }
 
 
 .welcomeMessage {
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .titleMessage {
-    font-size: 30px;
-    width: calc(100%);
-    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .rightSide {
   width: calc(40%);
+  /* height: 100%; */
 }
 
 .homeHours {
@@ -227,7 +260,7 @@ hr {
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+/* @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
 
   
 
@@ -286,10 +319,10 @@ hr {
 }
 
 
-}
+} */
 
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+/* @media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
 
   .pageTitle {
     font-size: 2rem;
@@ -340,12 +373,12 @@ hr {
 }
 
 
-} 
+}  */
 
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
     .pageTitle {
     font-size: 3rem;
@@ -423,7 +456,7 @@ hr {
 
 
 
-}
+} */
 
 
 

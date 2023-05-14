@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import "react-slideshow-image/dist/styles.css";
-import serviceImg from '../images/hair+top+banner+image.jpg'
+// import serviceImg from '../images/hair+top+banner+image.jpg'
 import { useTranslation } from 'react-i18next';
 
 
@@ -34,9 +34,9 @@ const fadeImages = () => {
         background: 'none',
         fontSize: '2rem',
         margin: '30px',
-        padding: '5px',
-        textAlign: 'center',
-        color: 'white',
+        padding: '10px',
+        textAlign: 'right',
+        color: 'black',
         border: '0',
         height: '30px',
         width: '30px',
@@ -69,10 +69,6 @@ export default function Services() {
     return (
         <div className="pageContainer">
             {/* <Navbar /> */}
-            <div className="topPage">
-                <img className="pageImg" src={serviceImg} alt="women's hair"></img>
-                <h1 className="pageTitle">{t('services:serviceTitle')}</h1>
-            </div>
             <div className="mainContent">
                 <div className="hairServices">
                     <div className="leftServices">
@@ -131,20 +127,20 @@ export default function Services() {
                     {fadeImages()}
                 </div>
                 <hr className="footerLine"></hr>
-                <div className="foot">
-                    <p className="footAddress">
-                        (707) 253-9312 <br></br>
-                        <br></br>
+            </div>
+            <div className="foot">
+                <p className="footAddress">
+                    (707) 253-9312 <br></br>
+                    <br></br>
                 3046 Jefferson Street<br></br>
                 Napa, CA 94558<br></br>
-                        <br></br>
-                        <br></br>
-                    </p>
-                    <p className="footer">
+                    <br></br>
+                    <br></br>
+                </p>
+                <p className="footer">
 
-                        {t('home:foot')}
-                    </p>
-                </div>
+                    {t('home:foot')}
+                </p>
             </div>
         </div>
     )

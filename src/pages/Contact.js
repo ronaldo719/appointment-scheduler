@@ -53,7 +53,7 @@ export default function Contact() {
                         <div className="contactInfo">
                             <h2 className="locationTitles">{t('contact:call')}</h2>
                             <p>
-                                <b>{t('contact:phone')}</b> (707) 253-9312
+                                <b>{t('contact:phone')}:</b> (707) 253-9312
                         <br></br>
                                 <br></br>
                                 {t('contact:walkin')}
@@ -76,32 +76,32 @@ export default function Contact() {
                             <ul>
                                 <li>
                                     {t('home:monday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">10:30AM - 7PM</p>
 
                                 </li>
                                 <li>
                                     {t('home:tuesday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">10:30AM - 7PM</p>
                                 </li>
                                 <li>
                                     {t('home:wednesday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">10:30AM - 7PM</p>
                                 </li>
                                 <li>
                                     {t('home:thursday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">10:30AM - 7PM</p>
                                 </li>
                                 <li>
                                     {t('home:friday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">10:30AM - 7PM</p>
                                 </li>
                                 <li>
                                     {t('home:saturday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">10:30AM - 7PM</p>
                                 </li>
                                 <li>
                                     {t('home:sunday')}
-                                    <p className="hoursText">9AM - 5PM</p>
+                                    <p className="hoursText">Closed</p>
                                 </li>
                             </ul>
                         </div>
@@ -133,24 +133,25 @@ export default function Contact() {
                         </form>
 
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.405571074042!2d-122.29976334850737!3d38.31643798848224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808506ef160e1403%3A0x30667bd12391e909!2sMary&#39;s%20Hair%20Cuts!5e0!3m2!1sen!2sus!4v1659045100356!5m2!1sen!2sus" width="600" height="450"
-                            style={{ border: '0', marginTop: "20px", width: '100%' }}
+                            style={{ border: '0', marginTop: "100px", width: '100%' }}
                             allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <hr className="footerLine"></hr>
-                <div className="foot">
-                    <p className="footAddress">
-                        (707) 253-9312  <br></br>
-                        <br></br>
+
+            </div>
+            <div className="foot">
+                <p className="footAddress">
+                    (707) 253-9312  <br></br>
+                    <br></br>
                 3046 Jefferson Street<br></br>
                 Napa, CA 94558<br></br>
-                        <br></br>
-                        <br></br>
-                    </p>
-                    <p className="footer">
-                        {t('home:foot')}
-                    </p>
-                </div>
+                    <br></br>
+                    <br></br>
+                </p>
+                <p className="footer">
+                    {t('home:foot')}
+                </p>
             </div>
         </div>
     )

@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Delete from "./pages/Delete";
+
 import { Route, Routes } from "react-router-dom"
 
 
@@ -30,9 +31,10 @@ class App extends Component {
   }
   render() {
     const { bookAppointmentButton } = this.state;
-    console.log('app');
+
     return (
       <>
+
         <Navbar />
         <div className="container">
           <Routes>
@@ -41,7 +43,7 @@ class App extends Component {
             <Route path="/services" element={<Services />} />
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/appointment" element={<AppointmentApp />} />
+            {/* <Route path="/appointment" element={<AppointmentApp />} /> */}
             <Route path="/delete" element={<Delete />} />
 
           </Routes>

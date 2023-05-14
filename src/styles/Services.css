@@ -1,9 +1,16 @@
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
 h1, h2, h3 {
     text-transform: uppercase;
     line-height: 26px;
 }
 p {
-    font-size: 17px;
+    font-size: 1rem;
+    font-weight: 400;
     line-height: 26px;
 }
 
@@ -13,7 +20,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     text-align: left;
 }
 
@@ -30,10 +37,10 @@ p {
 hr {
     position: relative;
     margin-bottom: 20px;
-    height: 1px;
+    /* height: 1px; */
     border-width:0;
-    color: #c7c7c7;
-    background-color:#a4a4a4;
+    /* color: #c7c7c7; */
+    /* background-color:#a4a4a4; */
 }
 
 .innerLine {
@@ -64,14 +71,17 @@ hr {
     height: 100%;
     align-items: center;
     padding: .7rem;
+    padding-left: 0;
 }
 
 .slideContainer {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     border-radius: 10px;
     margin-top: 2rem;
-    background-image: url(../images/Green+Gradient_2560x1200px.png); 
+    margin-bottom: 2rem;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1),rgba(238,212,207,0.7));
+    background-color: transparent;
 }
 
 .each-slide {
@@ -82,17 +92,21 @@ hr {
 
 .each-slide>div {
   width: 100%;
+   /* border: 1px solid #ccc; */
+  /* padding-bottom: 2rem; */
 
 }
 
 .each-slide>div img {
   width: 100%;
-  height: 55vh;
+  max-height: 55vh;
   object-fit: contain;
+  /* padding-bottom: 2rem; */
 }
 
 .slideShowButtons {
     transition: all .2s ease-in-out;
+    /* color: black; */
 }
 
 .slideShowButtons:hover {
@@ -124,7 +138,8 @@ hr {
 
 .serviceHeaders{
     line-height: 50px;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .innerLine {
@@ -152,25 +167,27 @@ hr {
 }
 
 .pricesTitle {
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
     line-height: 24px;
 }
 
 .slideContainer {
-    margin-top: 4rem;
+    margin-top: calc(10%);
+    margin-bottom: calc(10%);
 }
 
 .priceLine {
-    margin: 30px 5px;
+    margin: 30px 0;
 }
 
 
 
 
 
-}
+} 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+/* @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
 
 .haircuts {
     width: 100%;
@@ -194,9 +211,9 @@ hr {
 }
 
   
-}
+} */
 
-@media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
+/* @media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
 
   .pageTitle {
     font-size: 2rem;
@@ -222,11 +239,11 @@ hr {
 }
   
 
-} 
+}  */
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
 .hairServices {
     line-height: 26px;
@@ -277,6 +294,6 @@ hr {
 }
 
 
-}
+} */
 
 
