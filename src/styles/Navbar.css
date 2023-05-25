@@ -164,6 +164,14 @@ img{
       font-size: 1.1rem;
     }
 
+    .englishActive, .spanishActive {
+        font-size: 0.8rem;
+    }
+
+    .englishDeactive, .spanishDeactive {
+        font-size: 0.6rem;
+    }
+
 
 }
 
