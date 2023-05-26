@@ -125,25 +125,17 @@ img{
     background: none;
     font-family: inherit;
     border: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 } 
 
-.spanishDeactive {
-    font-size: 0.8rem;
+.spanishDeactive, .englishDeactive {
+    font-size: 0.7rem;
     border: none;
     background: none;
     color: #999999;
     border-left: 0.5px solid #999999;
 }
 
-.englishDeactive {
-     font-size: 0.6rem;
-    background: none;
-    border: none;
-    color: #999999;
-    border-right: 0.5px solid #999999;
-
-}
 
 .language:hover {
     cursor: pointer;
@@ -243,7 +235,7 @@ img{
     .changeLanguage {
         position: absolute;
         top: 3%;
-        left: 70%;
+        left: 65%;
     }
 } 
 
