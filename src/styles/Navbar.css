@@ -128,7 +128,7 @@ img{
     font-size: 0.8rem;
 } 
 
-.spanishDeactive, .englishDeactive {
+.spanishDeactive {
     font-size: 0.7rem;
     border: none;
     background: none;
@@ -136,6 +136,14 @@ img{
     border-left: 0.5px solid #999999;
 }
 
+.englishDeactive {
+     font-size: 0.7rem;
+    background: none;
+    border: none;
+    color: #999999;
+    border-right: 0.5px solid #999999;
+
+}
 
 .language:hover {
     cursor: pointer;
