@@ -129,7 +129,7 @@ img{
 } 
 
 .spanishDeactive {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     border: none;
     background: none;
     color: #999999;
@@ -137,7 +137,7 @@ img{
 }
 
 .englishDeactive {
-     font-size: 0.5rem;
+     font-size: 0.6rem;
     background: none;
     border: none;
     color: #999999;
@@ -165,11 +165,11 @@ img{
     }
 
     .englishActive, .spanishActive {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .englishDeactive, .spanishDeactive {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
 
@@ -245,15 +245,6 @@ img{
         top: 3%;
         left: 75%;
     }
-
-    .englishActive, .spanishActive {
-        font-size: 0.6rem;
-    }
-
-    .spanishDeactive, .englishDeactive {
-        font-size: 0.5rem;
-    }
-
 } 
 
 
@@ -321,7 +312,7 @@ img{
     .changeLanguage {
         position: absolute;
         top:0.5rem;
-        left: 85%;
+        left: 80%;
         gap: 5px;
     }
 
