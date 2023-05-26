@@ -1,4 +1,3 @@
-// import homeImg from '../images/hairhome.jpg'
 import womenHaircut from "../images/Women's+haircut.jpg"
 import { useTranslation } from 'react-i18next';
 import salonImg from '../images/Flourish_13.jpg';
@@ -66,14 +65,10 @@ export default function Home() {
                 </div>
 
 
-
-
-
-
                 <hr className="firstLine"></hr>
 
                 <div className="locationContainer">
-                    <div className="loocationInfo">
+                    <div className="locationInfo">
                         <h1 className="locationTitle">{t('home:location')}</h1>
                         <p className="locationAddress">
                             Mary's Hair Cuts <br></br>

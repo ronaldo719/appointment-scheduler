@@ -8,8 +8,9 @@ h1, h2, h3 {
     text-transform: uppercase;
     line-height: 26px;
 }
+
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 26px;
 }

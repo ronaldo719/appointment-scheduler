@@ -9,8 +9,6 @@
 .homePageImg {
   position: relative;
   width: 100%;
-  /* margin-top: calc(13%); */
-  /* border: 1px solid red; */
   height: 50vh;
 }
 
@@ -27,24 +25,17 @@
 .mainContent {
   padding: 0 calc(10%);
   margin-top: calc(5%);
-  /* border: 1px solid red; */
 }
 
 .middleContent{
     position: relative;
     width: 100%;
-    /* margin-top: 100px; */
     display: flex;
     height: auto;
-    /* padding: 3rem 0; */
-    padding: 0 calc(5%);
-    /* border: 1px solid green; */
+    /* padding: 0 calc(5%); */
     margin-bottom: calc(5%);
 }
 
-#homeMiddle {
-  margin-top: 0px;
-}
 
 
 .womenHaircut {
@@ -57,7 +48,9 @@
     padding:0;
     margin: 0;
     z-index: 1; 
+    border-radius: 5%;
 }
+
 .messageContainer{
   position: relative;
   display: block;
@@ -70,6 +63,7 @@
   background-attachment: scroll;
   background-color: transparent;
   height: auto;
+  border-radius: 5%;
 }
 
 
@@ -79,7 +73,7 @@
 }
 
 .welcomeMessage {
-    font-size: 12px;
+    font-size: 0.9rem;
     line-height: 20px;
 }
 
@@ -91,7 +85,7 @@
 
 .homeHours {
     position: relative;
-    /* height: 70%; */
+    border-radius: 5%;
     color: black;
     text-align: left;
     padding: 1.5rem;
@@ -99,7 +93,6 @@
     background-image: linear-gradient(180deg, rgba(255,255,255,1),rgba(39,79,140,0.25));
     background-attachment: scroll;
     background-color: transparent;
-    /* height: auto; */
 }
 
 .hours {
@@ -154,7 +147,7 @@ hr {
     height: 40vh;
 }
 
-.loocationInfo {
+.locationInfo {
   width: 30%;
 }
 
@@ -210,7 +203,6 @@ hr {
     margin: 0;
     padding: 0;
     height: auto;
-    /* border: 1px solid green; */
   }
 
   .messageContainer{
@@ -224,10 +216,6 @@ hr {
   }
 
 
-.welcomeMessage {
-  font-size: 0.9rem;
-}
-
 .titleMessage {
     font-size: 2rem;
     font-weight: 700;
@@ -237,7 +225,6 @@ hr {
 
 .rightSide {
   width: calc(40%);
-  /* height: 100%; */
 }
 
 .homeHours {
@@ -246,31 +233,23 @@ hr {
     height: 100%;
 }
 
-
-
-
 .footerLine {
     margin-top: 100px;
 }
-
-
 
 }
 
 
 
 /* Smartphones (portrait and landscape) ----------- */
-/* @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
 
-  
-
-  .pageTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
+  .mainContent {
+    padding: 0 calc(5%);
   }
 
   .middleContent{
-    margin-top: 50px;
+    margin-top: 2rem;
     display: block;
 
 }
@@ -278,15 +257,18 @@ hr {
 .leftSide {
   position: relative;
   margin: 0;
-  height: 100%;
   width: 100%;
-  display: flex;
-  height: 100%;
+  display: block;
+  height: auto;
+}
+
+.titleMessage {
+  font-size: 1.6rem;
 }
 
 .womenHaircut {
   position: absolute;
-  top: 0;
+  top: 80%;
   right: 0;
   display: block;
   width: calc(80%);
@@ -295,31 +277,47 @@ hr {
 
 .messageContainer {
   position: relative;
+  width: 100%;
   width: calc(100% - 30%);
-  margin-top: calc(60%);
+  /* margin-top: calc(60%); */
   display: block;
-  padding: 10% 14%;
+  padding: 5% 10%;
 }
 
-.welcomeMessage {
-    font-weight: 500;
+.homeHours li {
+  padding: 0;
 }
-
 
 .rightSide {
-  margin-top: calc(10%);
+  margin-top: calc(70%);
 }
 
 .homeHours {
   width: 100%;
 }
 
-.footer {
-    font-size: 12px;
+.hours {
+  font-size: 1.6rem;
 }
 
+.locationContainer {
+  display: block;
+  height: auto;
+}
 
-} */
+.locationInfo {
+  width: 100%;
+}
+
+.homeMap {
+  width: 100%;
+  height: 30vh;
+}
+.footer {
+    font-size: 0.7rem;
+}
+
+} 
 
 
 /* @media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
