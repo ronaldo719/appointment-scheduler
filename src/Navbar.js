@@ -20,10 +20,15 @@ export default function Navbar() {
         setSpanishActive(!spanishActive);
     }
 
+    //function for toggle button to retract after pressing a category
+    function toggleMenuRetract(e) {
+        setActive(!toggleButtonActive);
+
+    }
+
 
     return (
-        //         style = {{ height: toggleButtonActive === true ? 'auto' : '12vh' }
-        // }
+
         < div >
             <nav className="nav" >
                 <div className="navMainContainer">
@@ -45,10 +50,10 @@ export default function Navbar() {
 
                     <div className={toggleButtonActive === true ? 'navBar-links active' : 'navBar-links'}>
                         <ul>
-                            <CustomLink to="/home">{t('home')}</CustomLink>
-                            <CustomLink to="/services">{t('services')}</CustomLink>
-                            <CustomLink to="/team">{t('team')}</CustomLink>
-                            <CustomLink to="/contact">{t('contact us')}</CustomLink>
+                            <CustomLink to="/home" onClick={toggleMenuRetract} >{t('home')}</CustomLink>
+                            <CustomLink to="/services" onClick={toggleMenuRetract} >{t('services')}</CustomLink>
+                            <CustomLink to="/team" onClick={toggleMenuRetract}>{t('team')}</CustomLink>
+                            <CustomLink to="/contact" onClick={toggleMenuRetract}>{t('contact us')}</CustomLink>
                             {/* <CustomLink className="bookAppointment" to="/appointment">{t('book')}</CustomLink> */}
 
                         </ul>
