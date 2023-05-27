@@ -21,7 +21,7 @@ p {
     display: block;
     width: 100%;
     height: auto;
-    /* margin-top: 100px; */
+    margin-top: 2rem;
     text-align: left;
 }
 
@@ -38,10 +38,7 @@ p {
 hr {
     position: relative;
     margin-bottom: 20px;
-    /* height: 1px; */
     border-width:0;
-    /* color: #c7c7c7; */
-    /* background-color:#a4a4a4; */
 }
 
 .innerLine {
@@ -106,13 +103,20 @@ hr {
 }
 
 .slideShowButtons {
-    transition: all .2s ease-in-out;
-    /* color: black; */
+    background: none;
+    font-size: 2rem;
+    margin: 30px;
+    text-align: right;
+    border: 0;
+    height: 30px;
+    width: 30px;
+    /* transition: all .2s ease-in-out; */
+    color: black;
 }
 
 .slideShowButtons:hover {
-    transform: scale(1.4);
-    filter: brightness(120%);
+    /* transform: scale(1.4); */
+    /* filter: brightness(120%); */
 }
 
   /* big landscape tablets, laptops, and desktops */ 
@@ -188,12 +192,23 @@ hr {
 
 } 
 /* Smartphones (portrait and landscape) ----------- */
-/* @media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
 
 .haircuts {
     width: 100%;
 
 }
+
+#serviceTitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.serviceHeaders {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 
 .innerLine {
     margin-bottom: calc(10%);
@@ -203,8 +218,25 @@ hr {
     margin-top: calc(10%);
 }
 
+.pricesTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.priceLine {
+    margin-top: 0;
+}
+
 .pricesList li{
     padding: 0.5rem;
+}
+
+.each-slide>div img { 
+    border-radius: 5%;
+}
+
+.slideShowButtons {
+    display: none;
 }
 
 .slideContainer {
@@ -212,7 +244,7 @@ hr {
 }
 
   
-} */
+} 
 
 /* @media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
 

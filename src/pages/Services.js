@@ -30,21 +30,21 @@ const fadeImages = () => {
     const nextArrow = <FontAwesomeIcon icon={faArrowRight} />
     const backArrow = <FontAwesomeIcon icon={faArrowLeft} />
 
-    const buttonStyle = {
-        background: 'none',
-        fontSize: '2rem',
-        margin: '30px',
-        padding: '10px',
-        textAlign: 'right',
-        color: 'black',
-        border: '0',
-        height: '30px',
-        width: '30px',
-    };
+    // const buttonStyle = {
+    //     background: 'none',
+    //     fontSize: '2rem',
+    //     margin: '30px',
+    //     padding: '10px',
+    //     textAlign: 'right',
+    //     color: 'black',
+    //     border: '0',
+    //     height: '30px',
+    //     width: '30px',
+    // };
 
     const properties = {
-        prevArrow: <button className="slideShowButtons" style={{ ...buttonStyle }}>{backArrow}</button>,
-        nextArrow: <button className="slideShowButtons" style={{ ...buttonStyle }}>{nextArrow}</button>
+        prevArrow: <button className="slideShowButtons" >{backArrow}</button>,
+        nextArrow: <button className="slideShowButtons" >{nextArrow}</button>
     }
 
     return (
@@ -75,7 +75,7 @@ export default function Services() {
 
 
                         <div className="haircuts">
-                            <h2>{t('services:serviceTitle')}</h2>
+                            <h2 id="serviceTitle">{t('services:serviceTitle')}</h2>
                             <h1 className="serviceHeaders">{t('services:haircuts&styling')}</h1>
                             <p>
                                 {t('services:haircutsMessage1')}
