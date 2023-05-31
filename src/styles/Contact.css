@@ -11,7 +11,6 @@ h2 {
     display: block;
     position: relative;
     width: 100%;
-    /* margin-top: calc(10%); */
     text-align: left;
 }
 
@@ -204,7 +203,6 @@ h2 {
 .formSent {
     margin-bottom: 50px;
 }
-
 
 }
 

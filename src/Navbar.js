@@ -39,7 +39,7 @@ export default function Navbar() {
 
 
                         <div className="salonName">
-                            Mary's Hair Cuts
+                            <Link to="/" > Mary's Hair Cuts</Link>
                         </div>
                     </div>
                     <a href="#" className="toggle-button" onClick={(e) => setActive(!toggleButtonActive)} >
