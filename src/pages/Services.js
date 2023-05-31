@@ -68,7 +68,6 @@ export default function Services() {
     const { t } = useTranslation();
     return (
         <div className="pageContainer">
-            {/* <Navbar /> */}
             <div className="mainContent">
                 <div className="hairServices">
                     <div className="leftServices">

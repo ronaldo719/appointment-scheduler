@@ -33,6 +33,7 @@ p {
 .serviceHeaders {
      display: inline;
      white-space: pre-wrap;
+    font-weight: 700;
 }
 
 hr {
@@ -54,10 +55,15 @@ hr {
     border-width:0;
 }
 
+.pricesTitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .pricesList {
     padding:0;
     margin: 0;
-    font-size: 19px;
+    font-size: 1.1rem;
     line-height: 30px;
     list-style: none;
 
@@ -90,17 +96,12 @@ hr {
 
 .each-slide>div {
   width: 100%;
-   /* border: 1px solid #ccc; */
-  /* padding-bottom: 2rem; */
-
 }
 
 .each-slide>div img {
   width: 100%;
   max-height: 55vh;
   object-fit: contain;
-    /* border-radius: 10%; */
-  /* padding-bottom: 2rem; */
 }
 
 .slideShowButtons {
@@ -122,6 +123,10 @@ hr {
 
   /* big landscape tablets, laptops, and desktops */ 
 @media (min-width:1025px) { 
+
+    p {
+        font-size: 1rem;
+    }
 
 
 .hairServices {
@@ -145,7 +150,6 @@ hr {
 .serviceHeaders{
     line-height: 50px;
     font-size: 2rem;
-    font-weight: 700;
 }
 
 .innerLine {
@@ -174,7 +178,6 @@ hr {
 
 .pricesTitle {
     font-size: 1.5rem;
-    font-weight: 700;
     line-height: 24px;
 }
 
@@ -193,7 +196,7 @@ hr {
 
 } 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 300px) and (max-device-width :  767px) {
 
 .haircuts {
     width: 100%;
@@ -220,8 +223,7 @@ hr {
 }
 
 .pricesTitle {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .priceLine {
@@ -243,37 +245,13 @@ hr {
   
 } 
 
-/* @media only screen and (min-device-width : 480px) and (max-device-width : 767px) {
-
-  .pageTitle {
-    font-size: 2rem;
-    font-weight: 600;
-    top: 40%;
-  }
-
-  .haircuts {
-    width: 100%;
-
-}
-
-.innerLine {
-    margin-bottom: calc(10%);
-}
-
-.prices {
-    margin-top: calc(10%);
-}
-
-.slideContainer {
-    background-image: none;
-}
-  
-
-}  */
-
 
 /* iPads (portrait and landscape) ----------- */
-/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    p {
+        font-size: 1rem;
+    }
 
 .hairServices {
     line-height: 26px;
@@ -281,7 +259,7 @@ hr {
 
 .leftServices {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     left: 0%;
     width: 50%;
 }
@@ -289,12 +267,10 @@ hr {
 .haircuts {
     width: 100%;
     height: auto;
+    padding: 0;
+    /* padding-bottom: 10px; */
 }
 
-.serviceHeaders{
-    line-height: 50px;
-    font-size: 2.5rem;
-}
 
 .innerLine {
     position: relative;
@@ -306,6 +282,7 @@ hr {
 .chemicalServices {
     position: relative;
     width: 100%;
+     padding: 10px 0;
 }
 
 .prices {
@@ -316,14 +293,24 @@ hr {
     width: 40%;
     height: 100%;
     top: 0;
-    right: 0%;
+    right: 0;
 }
 
 .pricesTitle {
     margin: 0;
 }
 
+.priceLine {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
-} */
+.slideContainer {
+    margin-top: calc(10%);
+    margin-bottom: calc(10%);
+}
+
+
+} 
 
 
