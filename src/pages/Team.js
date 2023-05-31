@@ -1,4 +1,3 @@
-// import teamImg from '../images/team-banner-image.jpg'
 import olgaImg from '../images/staff/IMG_2066.jpg'
 import maryImg from '../images/staff/IMG_1619.jpg'
 import { useTranslation } from 'react-i18next';
@@ -23,11 +22,11 @@ export default function Team() {
                                 <FontAwesomeIcon icon={faFacebook} className="facebookIcon" />
                             </a></h2>
                             <p>
-                                <b>{t('team:services')}</b>: {t('team:servicesMessage')}
+                                <b>{t('team:services')}:</b> {t('team:servicesMessage')}
                                 <br></br>
-                                <b>{t('team:experience')}</b>: {t('team:years')}
+                                <b>{t('team:experience')}:</b> {t('team:years')}
                                 <br></br>
-                                <b>{t('team:personalNumber')}</b>: (707) 304-2461
+                                <b>{t('team:personalNumber')}:</b> (707) 304-2461
                             </p>
                         </div>
                         <div className="gridItem">
@@ -36,11 +35,11 @@ export default function Team() {
                                 <FontAwesomeIcon className="facebookIcon" icon={faFacebook} />
                             </a></h2>
                             <p>
-                                <b>{t('team:services')}</b>: {t('team:servicesMessage')}
+                                <b>{t('team:services')}:</b> {t('team:servicesMessage')}
                                 <br></br>
-                                <b>{t('team:experience')}</b>: {t('team:years')}
+                                <b>{t('team:experience')}:</b> {t('team:years')}
                                 <br></br>
-                                <b>{t('team:personalNumber')}</b>: (707) 927-8106
+                                <b>{t('team:personalNumber')}:</b> (707) 927-8106
                             </p> </div>
                     </div>
                 </div>

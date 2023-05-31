@@ -30,18 +30,6 @@ const fadeImages = () => {
     const nextArrow = <FontAwesomeIcon icon={faArrowRight} />
     const backArrow = <FontAwesomeIcon icon={faArrowLeft} />
 
-    // const buttonStyle = {
-    //     background: 'none',
-    //     fontSize: '2rem',
-    //     margin: '30px',
-    //     padding: '10px',
-    //     textAlign: 'right',
-    //     color: 'black',
-    //     border: '0',
-    //     height: '30px',
-    //     width: '30px',
-    // };
-
     const properties = {
         prevArrow: <button className="slideShowButtons" >{backArrow}</button>,
         nextArrow: <button className="slideShowButtons" >{nextArrow}</button>
