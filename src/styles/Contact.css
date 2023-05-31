@@ -1,7 +1,6 @@
 
 .contactTitle {
-    /* margin-top: calc(20%); */
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -40,6 +39,7 @@ h2 {
 
 .locationTitles {
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .locationHours ul {
@@ -67,7 +67,7 @@ h2 {
 }
 
 .contactForm {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: normal;
 }
 
@@ -171,15 +171,10 @@ h2 {
   /* big landscape tablets, laptops, and desktops */ 
 @media (min-width:701px) and (max-width:1024px) {
 
-
-.contactTitle {
-    margin-top: calc(10%);
-}
-
 .leftSideContent {
     position: relative;
     display: block;
-    width: 40%;
+    width: 45%;
     padding: 17px;
 }
 
@@ -189,7 +184,7 @@ h2 {
 
 
 .locationTitles {
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 40px;
 }
 
@@ -218,22 +213,24 @@ h2 {
 
 
 .contactTitle {
-    margin-top: calc(10%);
-    font-size: 2.3rem;
+    font-size: 1.8rem;
+    margin-bottom: 10%;
 }
  .locationTitles {
-     font-size: 1.5rem;
+     font-size: 1.3rem;
  }
 
  .leftSideContent {
      margin-bottom: 10%;
  }
 
-.contactForm {
-    margin-bottom: calc(10%);
+.leftSideContent {
+    padding: 0 5%;
 }
 
-
-
+.contactSubmit {
+    font-size: 0.9rem;
+    height: 40px;
+}
 
 }

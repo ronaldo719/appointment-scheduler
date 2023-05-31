@@ -53,7 +53,7 @@ export default function Contact() {
                         <div className="contactInfo">
                             <h2 className="locationTitles">{t('contact:call')}</h2>
                             <p>
-                                <b>{t('contact:phone')}:</b> (707) 253-9312
+                                <b>{t('contact:phone')}</b> (707) 253-9312
                         <br></br>
                                 <br></br>
                                 {t('contact:walkin')}
@@ -62,7 +62,7 @@ export default function Contact() {
                             </p>
                         </div>
                         <hr className="contactInnerLine"></hr>
-                        <div>
+                        <div className="contactLocationSection">
                             <h2 className="locationTitles">{t('home:location')}</h2>
                             <p>
                                 3046 Jefferson Street<br></br>
@@ -116,7 +116,7 @@ export default function Contact() {
                                 {t('contact:name')} *
                     </label>
                             <input className="contactInput" required type="name" name="name" id="name" ></input>
-                            <label for="email">
+                            <label htmlFor="email">
                                 {t('contact:email')} *
                     </label>
                             <input className="contactInput" required type="email" name="email" id="email"></input>
@@ -124,7 +124,7 @@ export default function Contact() {
                                 {t('contact:subject')} *
                     </label>
                             <input className="contactInput" required name="subject" type="text" id="subject"></input>
-                            <label for="email_body">
+                            <label htmlFor="email_body">
                                 {t('contact:message')} *
                     </label>
                             <textarea className="messageContact" required name="message" id="email_body" ></textarea>
@@ -134,7 +134,7 @@ export default function Contact() {
 
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.405571074042!2d-122.29976334850737!3d38.31643798848224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808506ef160e1403%3A0x30667bd12391e909!2sMary&#39;s%20Hair%20Cuts!5e0!3m2!1sen!2sus!4v1659045100356!5m2!1sen!2sus" width="600" height="450"
                             style={{ border: '0', marginTop: "100px", width: '100%' }}
-                            allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <hr className="footerLine"></hr>
