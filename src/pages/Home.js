@@ -1,6 +1,6 @@
 import womenHaircut from "../images/Women's+haircut.jpg"
 import { useTranslation } from 'react-i18next';
-import salonImg from '../images/Flourish_13.jpg';
+import salonImg from '../images/homepageImage.jpg';
 
 export default function Home() {
     const { t } = useTranslation();
